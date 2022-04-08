@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
 #from dotenv import load_dotenv
-from settings import settings
+from backend.core.settings import settings
 
 app = FastAPI(title=settings.PROJECT_NAME,version=settings.PROJECT_VERSION)
 #app = FastAPI()
