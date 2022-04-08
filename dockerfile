@@ -10,6 +10,6 @@ WORKDIR /code/
 # Install dependencies
 RUN pip install fastapi[all] fastapi-sqlalchemy pydantic alembic psycopg2-binary uvicorn
 
-COPY . /code/
+COPY ./backend/ /code/
 
 EXPOSE 8000
