@@ -8,7 +8,7 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /code/
 
 # Install dependencies
-RUN pip install fastapi[all] fastapi-sqlalchemy pydantic alembic psycopg2 uvicorn
+RUN pip install fastapi[all] fastapi-sqlalchemy pydantic alembic psycopg2-binary uvicorn
 
 COPY . /code/
 
