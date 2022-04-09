@@ -1,6 +1,6 @@
 import uvicorn
 from fastapi import FastAPI
-from backend.core.settings import settings
+from core.settings import settings
 from apis.general_pages.route_homepage import general_pages_router
 
 
@@ -18,4 +18,4 @@ app = start_application()
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
