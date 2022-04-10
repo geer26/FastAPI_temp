@@ -12,3 +12,12 @@ class User(Base):
     is_active = Column(Boolean(),default=True)
     is_superuser = Column(Boolean(),default=False)
     jobs = relationship("Job",back_populates="owner")
+
+    def __repr__(self):
+        return {'id': self.id, 'username': self.username, 'is_superuser': self.is_superuser, 'is_active': self.is_active}
+
+    def set_password(self):
+        return True
+
+    def check_password(self):
+        return True
