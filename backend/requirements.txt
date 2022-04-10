@@ -21,6 +21,7 @@ Jinja2==3.1.1
 Mako==1.2.0
 MarkupSafe==2.1.1
 orjson==3.6.7
+passlib[bcrypt]
 pipenv==2022.3.28
 platformdirs==2.5.1
 psycopg2-binary==2.9.3
