@@ -4,7 +4,7 @@ from fastapi import Depends
 
 from schemas.users import UserCreate
 from db.session import get_db
-from db.repository.users import create_new_user
+from repository.users import create_new_user
 
 
 router = APIRouter()
