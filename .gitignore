@@ -3,3 +3,4 @@
 /init/
 /pgadmin/
 /backend/test_db.db
+/backend/.pytest_cache/
